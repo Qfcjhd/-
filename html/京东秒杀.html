@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .box {
+        width: 200px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+    
+    .miaosha {
+        position: relative;
+        float: left;
+        width: 110px;
+        color: #fff;
+        font-weight: 700;
+        background-color: red;
+    }
+    
+    .box .miaosha i {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-color: transparent #fff transparent transparent;
+        border-style: solid;
+        border-width: 25px 10px 0 0;
+    }
+    
+    section {
+        width: 200px;
+        height: 200px;
+        margin: 50px auto;
+    }
+    
+    section img {
+        width: 100%;
+    }
+    
+    section::before {
+        content: "xxx";
+    }
+</style>
+
+<body>
+    <div class="box">
+        <span class="miaosha">
+            ￥888
+            <i></i>
+        </span>
+        <span>￥999</span>
+    </div>
+
+    <section class="">
+        123123
+    </section>
+</body>
+
+</html>

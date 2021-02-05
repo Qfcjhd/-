@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: greenyellow;
+    border: 2px solid #fff;
+}
+
+j {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: red;
+    border: 2px solid #fff;
+}
+
+
+/* 清除浮动 */
+
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+/* 清除浮动 */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.w {
+    width: 1200px;
+    margin: auto;
+}
+
+body {
+    background-color: #f3f4f5;
+}
+
+.header {
+    height: 77.5px;
+    margin: auto;
+}
+
+.logo {
+    float: left;
+    width: 162.38px;
+    height: 77.5px;
+}
+
+.logo img {
+    height: 100%;
+}
+
+.nav {
+    display: flex;
+    float: left;
+    text-align: center;
+    align-items: center;
+    height: 77.5px;
+    margin-left: 50px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.nav ul li a:hover {
+    border-bottom: 2px solid orange;
+    color: orange;
+}
+
+.nav .liLast {
+    margin-right: 0;
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 77.5px;
+    margin-left: 70px;
+}
+
+.search input {
+    float: left;
+    width: 315px;
+    height: 40px;
+    border: 1px solid lightskyblue;
+    border-right: none;
+    padding-left: 15px;
+    margin-top: 18px;
+    color: #5f5f5f;
+    font-size: 16px;
+}
+
+.search button {
+    float: left;
+    width: 80px;
+    height: 42px;
+    margin-top: 18px;
+    border: 1px solid lightskyblue;
+    background-color: #00a1d6;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search button:hover {
+    background-color: lightskyblue;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 77.5px;
+    margin-right: 15px;
+}
+
+.user a {
+    font-size: 14px;
+    color: #666;
+}
+
+.user a:hover {
+    color: black;
+}
+
+.user img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid greenyellow;
+}
+
+
+/* banner */
+
+.banner {
+    height: 421px;
+    background-color: rgba(64, 71, 90);
+}
+
+.banner .w {
+    height: 421px;
+    background-color: pink;
+    background: url(../images/mountain.jpg) no-repeat top center
+}
+
+.banner .w .subnav {
+    float: left;
+    width: 230px;
+    height: 421px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.subnav ul li a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.subnav ul li a span {
+    float: right;
+    padding-right: 30px;
+}
+
+.subnav ul li:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.subnav ul li a:hover {
+    color: #00a1d6;
+}
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #fff;
+    cursor: default;
+}
+
+.course h1 {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    background-color: #00a1d6;
+}
+
+.bd {
+    padding: 0px 20px;
+}
+
+.bd ul li {
+    padding: 14px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+.bd ul li :hover {
+    color: #00a1d6;
+}
+
+.bd ul li h4 {
+    font-size: 16px;
+    text-decoration: solid;
+    color: #4e4e4e;
+}
+
+.bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd .more {
+    display: block;
+    height: 38px;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 38px;
+    color: #00a1d6;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #00a1d6;
+}
+
+.bd .more:hover {
+    color: #fff;
+    background-color: #00a1d6;
+}
+
+
+/* banner */
+
+
+/* goods */
+
+.goods {
+    height: 60px;
+    line-height: 60px;
+    margin-top: 20px;
+    border-top: 1px solid #f3f4f5;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.1);
+}
+
+.goods h3 {
+    float: left;
+    padding-left: 35px;
+    color: #00a1d6;
+}
+
+.goods ul {
+    float: left;
+}
+
+.goods ul li {
+    float: left;
+}
+
+.goods ul li a span {
+    padding: 0 35px;
+}
+
+.goods ul li a:hover {
+    color: #00a1d6;
+}
+
+.goods .mod {
+    float: right;
+    font-size: 14px;
+    margin-right: 35px;
+    color: #00a1d6;
+}
+
+.box {
+    margin-top: 30px;
+    height: 30px;
+}
+
+.boxhd {
+    height: 45px;
+}
+
+.boxhd h3 {
+    float: left;
+    padding: 0 35px;
+    font-size: 20px;
+    color: #494949;
+}
+
+.boxhd a {
+    float: right;
+    font-size: 14px;
+    padding: 0 35px;
+    margin-top: 5px;
+    color: #a5a5a5;
+}
+
+.boxhd a:hover {
+    color: #00a1d6;
+}
+
+.boxbd ul li {
+    position: relative;
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    margin-top: 15px;
+    background-color: #fff;
+}
+
+clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.boxbd ul li img {
+    width: 100%;
+    height: 170px;
+}
+
+.boxbd ul li h3 {
+    font-size: 15px;
+    padding: 20px 20px;
+    box-sizing: content-box;
+}
+
+.boxbd ul li p {
+    float: left;
+    font-size: 14px;
+}
+
+.info {
+    margin: 0 10px;
+    font-size: 13px;
+    color: rgba(171, 173, 170);
+}
+
+.info span {
+    padding-left: 20px;
+    color: orange;
+}
+
+.boxbd .boxLastLi {
+    margin-right: 0px;
+}
+
+.footer {
+    height: 415px;
+    margin-top: 40px;
+    background-color: #fff;
+}
+
+.footer .w {
+    padding-top: 35px;
+}
+
+.footer-left {
+    float: left;
+}
+
+.footer-left p {
+    width: 280px;
+    padding-top: 10px;
+    font-size: 13px;
+    color: rgba(171, 173, 170);
+}
+
+.footer-left img {
+    width: 270px;
+    height: 160px;
+}
+
+.footer-left a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #00a1d6;
+    margin-top: 20px;
+    color: #00a1d6;
+}
+
+.footer-left a:hover {
+    background-color: #00a1d6;
+    color: #fff;
+}
+
+.footer-right {
+    float: right;
+}
+
+.footer-right dl {
+    float: left;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.footer-right dt h4 {
+    padding-bottom: 10px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer-right dd {
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+
+/* goods */
+
+.ewcode {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    width: 170px;
+    border: 2px solid #fff;
+    background-color: red;
+}
+
+.ewcode h3 {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #00a1d6;
+    font-size: 15px;
+    color: #fff;
+}
+
+.ewcode img {
+    display: block;
+    width: 100%;
+}
+
+.ewcode svg {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 16px;
+    height: 16px;
+    background: rgb(0, 0, 0, 0);
+}
+
+.top {
+    position: fixed;
+    bottom: 160px;
+    left: 50%;
+    margin-left: 600px;
+    width: 50px;
+    height: 50px;
+}
+
+.top img {
+    display: block;
+    width: 100%;
+}

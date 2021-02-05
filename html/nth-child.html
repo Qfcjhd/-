@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul li:nth-child(n) {
+        background-color: bisque;
+    }
+    /* ul li:nth-child(even) {
+        background-color: cadetblue;
+    }
+    
+    ul li:nth-child(4) {
+        background-color: red;
+    } */
+    
+    ul li:nth-child(-n + 5) {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</body>
+
+</html>

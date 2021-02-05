@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /* 清除浮动 */
+    
+    .clearfix::before,
+    .clearfix::after {
+        content: "";
+        display: table;
+    }
+    
+    .clearfix::after {
+        clear: both;
+    }
+    
+    .clearfix {
+        *zoom: 1;
+    }
+    /* 清除浮动 */
+    
+    body {
+        background-color: rgba(245, 245, 245);
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .box {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: -40px;
+    }
+    
+    .title:hover .box {
+        display: block;
+    }
+    
+    a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .title {
+        position: relative;
+        text-align: center;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        margin: 0 auto;
+        background-color: rgba(245, 245, 245);
+    }
+    
+    .title a {
+        font-size: 14px;
+        color: rgb(54, 54, 206);
+    }
+    
+    .box .top {
+        position: absolute;
+        top: -20px;
+        right: 10px;
+        width: 0;
+        left: 100px;
+        line-height: 0;
+        font-size: 0;
+        border: 10px solid transparent;
+        border-bottom-color: #fff;
+    }
+    
+    .box .body {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        line-height: 200px;
+        background-color: #fff;
+    }
+    
+    ul li {
+        float: left;
+        padding: 0 20px;
+        border-right: 1px solid orange;
+    }
+    
+    .tab {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    
+    .tab input {
+        outline: none;
+        height: 20px;
+    }
+    
+    .tab .button-input {
+        width: 90px;
+        height: 20px;
+        margin-left: 10px;
+        line-height: 20px;
+        background-color: bisque;
+        border: 1px solid orange;
+    }
+    
+    .tab .button-input:active {
+        background-color: orange;
+    }
+</style>
+
+<body>
+
+    <!-- 头 -->
+    <ul class="clearfix">
+        <li>
+            <div class="title">
+                <a href="">个人信息</a>
+                <div class="box">
+                    <div class="body">
+                        <div class="top">
+                        </div>
+                        暂无!
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="title">
+                <a href="">网络延迟</a>
+                <div class="box">
+                    <div class="body">
+                        <div class="top">
+                        </div>
+                        99s
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="title">
+                <a href="">商业贷款</a>
+                <div class="box">
+                    <div class="body">
+                        <div class="top">
+                        </div>
+                        1200W
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <!-- 头 -->
+
+    <!-- 去掉表单线 -->
+
+    <div class="tab">
+        <table>
+            <input type="text">
+            <input class="button-input" type="button" value="button">
+        </table>
+    </div>
+
+    <!-- 去掉表单线 -->
+
+</body>
+
+</html>
